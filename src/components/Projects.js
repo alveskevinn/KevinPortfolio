@@ -28,21 +28,6 @@ export const Projects = () => {
       imgUrl: projImg3,
       link: "https://calculadora-jade-seven.vercel.app/"
     },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
-    },
   ];
 
   return (
