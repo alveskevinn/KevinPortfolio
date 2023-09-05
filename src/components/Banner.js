@@ -58,7 +58,7 @@ export const Banner = () => {
                 <span className="tagline">Bem vindo ao meu Portfolio</span>
                 <h1>{`Olá, eu sou o Kevin`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Desenvolvedor Front-end", "Desenvolvedor Back-end" ]'><span className="wrap">{text}</span></span></h1>
                   <p>Desenvolvedor apaixonado por tecnologia, fundindo arte e código para criar experiências digitais impactantes. Com expertise em front-end e back-end, meu objetivo é impulsionar a inovação e entregar soluções excepcionais. Conhecimento sólido em React, Node.js, e um toque de magia em design UX/UI.</p>
-                  <button onClick={() => console.log('connect')}>Mandar mensagem <ArrowRightCircle size={25} /></button>
+                  <button> <a href="mailto:kevinpedrosodev@gmail.com" className="link_msg">Mandar mensagem <ArrowRightCircle size={25} /></a></button>
               </div>}
             </TrackVisibility>
           </Col>
