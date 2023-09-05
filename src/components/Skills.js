@@ -2,6 +2,8 @@
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import colorSharp from "../assets/img/color-sharp.png"
+import LanguageTag from './LanguageTag';
+
 
 export const Skills = () => {
   const responsive = {
@@ -22,6 +24,33 @@ export const Skills = () => {
       items: 1
     }
   };
+  const skills = [
+    {
+      description: "JavaScript",
+      imgUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg"
+    },
+    {
+      description: "React",
+      imgUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+    },
+    {
+      description: "MySQL",
+      imgUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+    },
+    {
+      description: "PHP",
+      imgUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-plain.svg"
+    },
+    {
+      description: "VueJS",
+      imgUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg"
+    },
+    {
+      description: "Linux",
+      imgUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"
+    }
+
+  ];
 
   return (
     <section className="skill" id="skills">
@@ -30,20 +59,10 @@ export const Skills = () => {
                 <div className="col-12">
                     <div className="skill-bx wow zoomIn">
                         <h2>Skills</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br></br> Lorem Ipsum has been the industry's standard dummy text.</p>
+                        <p>Iniciei estudando de forma dedicada Front-End, busco continuar desenvolvendo e aprimorando minhas habilidades. Atualmente, estou estudando Back-end e almejo me tornar um desenvolvedor Full Stack. Algumas das minhas skills abaixo:</p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
-                            <div className="item">
-                                <h5>Web Development</h5>
-                            </div>
-                            <div className="item">
-                                <h5>Brand Identity</h5>
-                            </div>
-                            <div className="item">
-                                <h5>Logo Design</h5>
-                            </div>
-                            <div className="item">
-                                <h5>Web Development</h5>
-                            </div>
+                            {skills.map((skill, index) => 
+                                <LanguageTag key={index} {...skill} />)}
                         </Carousel>
                     </div>
                 </div>
