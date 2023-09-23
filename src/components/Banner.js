@@ -11,7 +11,7 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Desenvolvedor Front-end", "Desenvolvedor Back-end", "Desenvolvedor Junior" ];
+  const toRotate = [ "Front-end", "Back-end", "Junior" ];
   const period = 2000;
 
   useEffect(() => {
@@ -56,7 +56,7 @@ export const Banner = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">Bem vindo ao meu Portfolio</span>
-                <h1>{`Olá, eu sou o Kevin`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Desenvolvedor Front-end", "Desenvolvedor Back-end" ]'><span className="wrap">{text}</span></span></h1>
+                <h1>{`Olá, eu sou o Kevin Desenvolvedor`} <div className="txt-rotate" dataPeriod="1000" data-rotate='[ "Front-end", "Back-end", "Junior" ]'><span className="wrap">{text}</span></div></h1>
                   <p>Desenvolvedor apaixonado por tecnologia, fundindo arte e código para criar experiências digitais impactantes. Com expertise em front-end e back-end, meu objetivo é impulsionar a inovação e entregar soluções excepcionais. Conhecimento sólido em React, Node.js, e um toque de magia em design UX/UI.</p>
                   <button> <a href="mailto:kevinpedrosodev@gmail.com" className="link_msg">Mandar mensagem <ArrowRightCircle size={25} /></a></button>
               </div>}
