@@ -4,6 +4,7 @@ import projImg1 from "../assets/img/projeto-img1.png";
 import projImg2 from "../assets/img/projeto-img2.png";
 import projImg3 from "../assets/img/projeto-img3.png";
 import projImg5 from "../assets/img/Proj5.png";
+import projImg6 from "../assets/img/projeto6.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
@@ -33,6 +34,12 @@ export const Projects = () => {
       description: "Feito com ChakraUI e Java",
       imgUrl: projImg5,
       link: "",
+    },
+    {
+      title: "StreamSeries",
+      description: "Feito com HTML",
+      imgUrl: projImg6,
+      link: "https://alveskevinn.github.io/stream-series/",
     },
   ];
 
