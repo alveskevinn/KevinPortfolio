@@ -4,6 +4,7 @@ export default function LanguageTag({ description, imgUrl}) {
   return (
     <div className="item">
       <img src={imgUrl} alt={description} />
+      <p>{description}</p>
     </div>
   );
 }
